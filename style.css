@@ -1,239 +1,287 @@
-/* Welcome Banner Section */
-#welcome-banner {
-    background-color: white;
-    color: black;
-    padding: 10px 0;
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    animation: slideInFromLeft 2s ease-out, popIn 0.5s ease-out 2s forwards;
-}
-
-/* Keyframe for sliding in from left to right */
-@keyframes slideInFromLeft {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
-}
-
-/* Keyframe for popping effect */
-@keyframes popIn {
-    0% {
-        transform: scale(0);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-/* Other styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body and Background */
 body {
-    font-family: 'Merryweather', serif, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;  /* White background for the body */
+    color: #000000;  /* Black text color for content */
 }
 
 /* Header Styling */
 header {
-    background-color: #004e7c;  /* Moroccan blue */
-    color: white;
-    padding: 20px 0;
+    background: #006f6f;  /* Sea blue background for header */
+    color: #fff;  /* White text color in header */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    padding: 20px 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
 }
 
-header .logo h1 {
-    font-size: 36px;
+.popping-text {
+    font-size: 4vw;  /* Smaller, responsive size */
     font-weight: bold;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #ffcc00;  /* Gold accents */
+    animation: pop 1s infinite alternate;
 }
 
+@keyframes pop {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);  /* Slight pop effect */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Navigation Styling */
 nav ul {
     list-style: none;
     display: flex;
-    gap: 30px;
 }
 
 nav ul li {
-    text-transform: uppercase;
+    margin-left: 30px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ffcc00;
-}
-
-.social-media {
-    position: absolute;
-    right: 20px;
-    top: 20px;
-}
-
-.social-icon img {
-    width: 30px;
-    margin-left: 10px;
-    transition: opacity 0.3s;
-}
-
-.social-icon img:hover {
-    opacity: 0.7;
-}
-
-/* Hero Section */
-.hero {
-    background: url('moroccan-pattern.jpg') no-repeat center center / cover;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-    background-color: #004e7c;
-    background-blend-mode: overlay;
-}
-
-.hero h1 {
-    font-size: 48px;
-    font-weight: bold;
-}
-
-.hero p {
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    background-color: #ffcc00;
-    border: none;
-    padding: 12px 25px;
     font-size: 18px;
-    color: white;
-    cursor: pointer;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect for Links */
+nav ul li a:hover {
+    background-color: #f2f2f2;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    color: #000;
 }
 
-.cta-button:hover {
-    background-color: #003366;
-}
-
-/* Content Sections */
-.content-section {
-    padding: 40px 20px;
-    background-color: white;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.content-section h2 {
+/* Section Styling */
+section {
+    padding: 60px 40px;
     text-align: center;
-    font-size: 36px;
+}
+
+/* Header Section */
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #333; /* Dark gray for readability */
+}
+
+/* Intro Section */
+.intro-section {
+    background-color: #ffffff;  /* White background for intro section */
+    padding: 100px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.intro-section h2 {
+    font-size: 3rem;
     margin-bottom: 20px;
 }
 
-.card-container {
+.intro-section button {
+    background-color: #f2f2f2;
+    color: #000;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.intro-section button:hover {
+    background-color: #dcdcdc;
+}
+
+/* Small Pill Divider with Popping Animation */
+.pill-divider {
+    background-color: #006f6f;  /* Sea blue background for pill divider */
+    height: 8px;  /* Small height for the pill divider */
+    width: 100%;
+    border-radius: 50px;  /* Making the pill shape */
+    margin: 40px 0;  /* Space between sections */
+    animation: pop-pill 1s infinite alternate;
+}
+
+@keyframes pop-pill {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);  /* Slight pop effect */
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Attractions Section */
+.attractions-section {
+    background-color: #ffffff;  /* White background for attractions section */
+    padding: 60px 40px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.attractions-container {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 30px;
 }
 
-.card {
-    background-color: #f1f1f1;
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+.attraction-card {
+    background-color: #ffffff;  /* White background for attraction cards */
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.card:hover {
-    transform: translateY(-10px);
+.attraction-card:hover {
+    transform: translateY(-10px); /* Hover effect to lift up the cards */
 }
 
-.card h3 {
-    font-size: 22px;
+.attraction-card h3 {
+    font-size: 1.6rem;
     margin-bottom: 10px;
 }
 
-.card p {
-    font-size: 16px;
+.attraction-card p {
+    font-size: 1rem;
 }
 
-.card a {
-    text-decoration: none;
-    color: #004e7c;
-    font-weight: bold;
+/* Culture Section */
+.culture-section {
+    background-color: #ffffff;  /* White background for culture section */
+    padding: 60px 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
 
-.events-list {
+.culture-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #000;
+}
+
+/* Food Section */
+.food-section {
+    background-color: #ffffff;  /* White background for food section */
+    padding: 80px 40px;
+}
+
+.food-container {
     display: flex;
-    gap: 20px;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 30px;
 }
 
-.event {
-    background-color: #f1f1f1;
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.food-card {
+    background-color: #ffffff;  /* White background for food cards */
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-.blog-posts {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
+.food-card:hover {
+    transform: translateY(-10px); /* Hover effect to lift up the cards */
 }
 
-.blog-posts article {
-    background-color: #f1f1f1;
-    padding: 20px;
-    width: 45%;
-    margin: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.food-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
 }
 
+.food-card p {
+    font-size: 1rem;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #ffffff;  /* White background for contact section */
+    padding: 60px 40px;
+    border-radius: 10px;
+}
+
+.contact-section button {
+    background-color: #f2f2f2;
+    color: #000;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #dcdcdc;
+}
+
+/* Footer */
 footer {
+    background: #006f6f;  /* Sea blue background for footer */
+    color: #fff;
     text-align: center;
-    padding: 20px;
-    background-color: #004e7c;
-    color: white;
+    padding: 20px 40px;
+    margin-top: 40px;
 }
 
-/* Animation */
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-section {
-    animation: slideIn 0.8s ease-out;
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .popping-text {
+        font-size: 7vw;
+    }
+
+    .attractions-container, .food-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .attraction-card, .food-card {
+        width: 80%; /* Full width on mobile for the attraction and food cards */
+        margin-bottom: 20px;
+    }
 }
