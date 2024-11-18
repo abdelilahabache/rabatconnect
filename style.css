@@ -1,4 +1,38 @@
-/* General Reset */
+/* Welcome Banner Section */
+#welcome-banner {
+    background-color: white;
+    color: black;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    animation: slideInFromLeft 2s ease-out, popIn 0.5s ease-out 2s forwards;
+}
+
+/* Keyframe for sliding in from left to right */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Keyframe for popping effect */
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Other styles */
 * {
     margin: 0;
     padding: 0;
