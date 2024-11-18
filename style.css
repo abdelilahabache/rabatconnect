@@ -7,24 +7,24 @@
 
 /* Body and Background */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #ffffff;  /* White background for the body */
-    color: #000000;  /* Black text color for content */
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;  /* White background */
+    color: #000000;  /* Black text */
 }
 
 /* Header Styling */
 header {
-    background: #006f6f;  /* Sea blue background for header */
-    color: #fff;  /* White text color in header */
+    background: #006f6f;  /* Sea blue */
+    color: #fff;  /* White text */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);  /* Light shadow for depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .popping-text {
-    font-size: 4vw;  /* Smaller, responsive size */
+    font-size: 4vw;
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -32,18 +32,15 @@ header {
 }
 
 @keyframes pop {
-    0% {
+    0%, 100% {
         transform: scale(1);
     }
     50% {
-        transform: scale(1.05);  /* Slight pop effect */
-    }
-    100% {
-        transform: scale(1);
+        transform: scale(1.05);
     }
 }
 
-/* Navigation Styling */
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
@@ -56,17 +53,16 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 18px;
     text-transform: uppercase;
+    font-size: 18px;
     padding: 8px 15px;
     transition: all 0.3s ease;
 }
 
-/* Hover Effect for Links */
 nav ul li a:hover {
-    background-color: #f2f2f2;
-    border-radius: 5px;
+    background-color: #e0e0e0;
     color: #000;
+    border-radius: 5px;
 }
 
 /* Section Styling */
@@ -75,179 +71,60 @@ section {
     text-align: center;
 }
 
-/* Header Section */
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #000;
-}
-
-p {
-    font-size: 1.1rem;
-    margin-bottom: 30px;
-    color: #333; /* Dark gray for readability */
-}
-
 /* Intro Section */
 .intro-section {
-    background-color: #ffffff;  /* White background for intro section */
+    background-color: #ffffff;
     padding: 100px 40px;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.intro-section h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
 }
 
 .intro-section button {
     background-color: #f2f2f2;
     color: #000;
     padding: 15px 30px;
-    font-size: 1.2rem;
-    border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s;
 }
 
 .intro-section button:hover {
-    background-color: #dcdcdc;
+    background-color: #c0c0c0;
 }
 
-/* Small Pill Divider with Popping Animation */
+/* Pill Divider */
 .pill-divider {
-    background-color: #006f6f;  /* Sea blue background for pill divider */
-    height: 8px;  /* Small height for the pill divider */
-    width: 100%;
-    border-radius: 50px;  /* Making the pill shape */
-    margin: 40px 0;  /* Space between sections */
+    background-color: #006f6f;
+    height: 6px;
+    border-radius: 50px;
+    margin: 40px 0;
     animation: pop-pill 1s infinite alternate;
 }
 
 @keyframes pop-pill {
-    0% {
-        transform: scale(1);
+    0%, 100% {
+        transform: scaleX(1);
     }
     50% {
-        transform: scale(1.05);  /* Slight pop effect */
-    }
-    100% {
-        transform: scale(1);
+        transform: scaleX(1.05);
     }
 }
 
-/* Attractions Section */
-.attractions-section {
-    background-color: #ffffff;  /* White background for attractions section */
-    padding: 60px 40px;
+/* Card Styles */
+.attraction-card, .food-card {
+    background: #ffffff;
     border-radius: 10px;
-    margin-bottom: 30px;
-}
-
-.attractions-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.attraction-card {
-    background-color: #ffffff;  /* White background for attraction cards */
     padding: 30px;
-    border-radius: 10px;
-    width: 30%;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
 }
 
-.attraction-card:hover {
-    transform: translateY(-10px); /* Hover effect to lift up the cards */
-}
-
-.attraction-card h3 {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-}
-
-.attraction-card p {
-    font-size: 1rem;
-}
-
-/* Culture Section */
-.culture-section {
-    background-color: #ffffff;  /* White background for culture section */
-    padding: 60px 40px;
-    margin-bottom: 30px;
-    border-radius: 10px;
-}
-
-.culture-section p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    color: #000;
-}
-
-/* Food Section */
-.food-section {
-    background-color: #ffffff;  /* White background for food section */
-    padding: 80px 40px;
-}
-
-.food-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-.food-card {
-    background-color: #ffffff;  /* White background for food cards */
-    padding: 30px;
-    border-radius: 10px;
-    width: 30%;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
-
-.food-card:hover {
-    transform: translateY(-10px); /* Hover effect to lift up the cards */
-}
-
-.food-card h3 {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-}
-
-.food-card p {
-    font-size: 1rem;
-}
-
-/* Contact Section */
-.contact-section {
-    background-color: #ffffff;  /* White background for contact section */
-    padding: 60px 40px;
-    border-radius: 10px;
-}
-
-.contact-section button {
-    background-color: #f2f2f2;
-    color: #000;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-section button:hover {
-    background-color: #dcdcdc;
+.attraction-card:hover, .food-card:hover {
+    transform: translateY(-10px);
 }
 
 /* Footer */
 footer {
-    background: #006f6f;  /* Sea blue background for footer */
+    background: #006f6f;
     color: #fff;
     text-align: center;
     padding: 20px 40px;
@@ -256,32 +133,13 @@ footer {
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    .attraction-card, .food-card {
+        width: 80%;
+        margin: 10px auto;
+    }
+
     header {
         flex-direction: column;
         align-items: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        margin-top: 20px;
-    }
-
-    nav ul li {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .popping-text {
-        font-size: 7vw;
-    }
-
-    .attractions-container, .food-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .attraction-card, .food-card {
-        width: 80%; /* Full width on mobile for the attraction and food cards */
-        margin-bottom: 20px;
     }
 }
