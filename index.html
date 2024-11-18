@@ -3,102 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rabat Connect - Explore Rabat</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Rabat Connect</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Linking the external CSS file -->
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- Header Section -->
     <header>
         <div class="logo">
-            <h1 class="popping-text">Rabat Connect</h1>
+            <h1>Rabat Connect</h1>
         </div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Attractions</a></li>
-                <li><a href="#">Culture</a></li>
-                <li><a href="#">Food</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="searchFunction()">Search</button>
+        </div>
     </header>
 
-    <!-- Intro Section -->
-    <section class="intro-section">
-        <h2>Explore Rabat</h2>
-        <p>Discover the beauty and culture of Rabat, Morocco, from historical landmarks to modern-day gems.</p>
-        <button>Start Exploring</button>
-    </section>
-
-    <!-- Pill Divider -->
-    <div class="pill-divider"></div>
-
-    <!-- Attractions Section -->
-    <section class="attractions-section">
-        <h2>Attractions</h2>
-        <div class="attractions-container">
-            <div class="attraction-card">
-                <h3>Royal Palace</h3>
-                <p>Explore the grandeur of the Royal Palace in Rabat, a symbol of Morocco's monarchy.</p>
-            </div>
-            <div class="attraction-card">
-                <h3>Hassan Tower</h3>
-                <p>Visit the historical Hassan Tower, an iconic symbol of Rabat.</p>
-            </div>
-            <div class="attraction-card">
-                <h3>Chellah Necropolis</h3>
-                <p>Discover the ancient Roman ruins and tranquil gardens of Chellah.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pill Divider -->
-    <div class="pill-divider"></div>
-
-    <!-- Culture Section -->
-    <section class="culture-section">
-        <h2>Moroccan Culture</h2>
-        <p>Immerse yourself in Rabat's rich cultural heritage, from traditional crafts to vibrant festivals.</p>
-    </section>
-
-    <!-- Pill Divider -->
-    <div class="pill-divider"></div>
-
-    <!-- Food Section -->
-    <section class="food-section">
-        <h2>Delicious Food</h2>
-        <div class="food-container">
-            <div class="food-card">
-                <h3>Tagine</h3>
-                <p>A traditional Moroccan dish, perfect for meat lovers and vegetarians alike.</p>
-            </div>
-            <div class="food-card">
-                <h3>Couscous</h3>
-                <p>Experience the taste of Moroccan couscous, a staple in Moroccan cuisine.</p>
-            </div>
-            <div class="food-card">
-                <h3>Mint Tea</h3>
-                <p>Enjoy the refreshing flavors of Moroccan mint tea, a symbol of hospitality.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pill Divider -->
-    <div class="pill-divider"></div>
-
-    <!-- Contact Section -->
-    <section class="contact-section">
-        <h2>Contact Us</h2>
-        <p>Have questions or need assistance? Reach out to us, and we'll be happy to help!</p>
-        <button>Contact Us</button>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Rabat Connect. All rights reserved.</p>
-    </footer>
+    <script src="script.js"></script> <!-- Linking the external JS file -->
 
 </body>
 </html>
