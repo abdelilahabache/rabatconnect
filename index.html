@@ -8,27 +8,85 @@
     <link rel="stylesheet" href=file:///C:/Users/El%20Houssein/OneDrive/Documents/rabatconnect/rabatconnect/style.css> <!-- Linking the external CSS file -->
 </head>
 <body>
-
     <!-- Header Section -->
     <header>
-        <div class="logo">
-            <h1>Rabat Connect</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="file:///C:/Users/El%20Houssein/OneDrive/Documents/rabatconnect/rabatconnect/contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="search">
-            <input type="text" id="searchInput" placeholder="Search...">
-            <button onclick="searchFunction()">Search</button>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Rabat Connect Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <script src="script.js"></script> <!-- Linking the external JS file -->
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to Rabat Connect</h1>
+            <p>Your trusted partner for seamless connectivity and networking solutions in Rabat.</p>
+            <a href="#services" class="cta-button">Explore Our Services</a>
+        </div>
+    </section>
 
+    <!-- About Us Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Rabat Connect is dedicated to providing innovative and reliable connectivity solutions tailored to meet the needs of businesses and individuals in Rabat. Our mission is to bridge gaps and foster connections through cutting-edge technology and exceptional service.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>High-Speed Internet</h3>
+                    <p>Experience blazing-fast internet speeds for your home or business.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Networking Solutions</h3>
+                    <p>Customized networking solutions to keep you connected seamlessly.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Tech Support</h3>
+                    <p>24/7 technical support to ensure your connectivity is always at its best.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us!</p>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Rabat Connect. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
