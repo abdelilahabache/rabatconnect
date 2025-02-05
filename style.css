@@ -5,184 +5,192 @@ body {
     padding: 0;
     color: #333;
     background-color: #f4f4f4;
-  }
-  
-  h1, h2, h3 {
+}
+
+h1, h2, h3 {
     font-family: 'Playfair Display', serif;
-  }
-  
-  .container {
+}
+
+.container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  /* Header */
-  header {
+}
+
+/* Header */
+header {
     background-color: #2c3e50;
     color: #fff;
     padding: 20px 0;
-    border-radius: 20px; /* Adjust the value to control the roundness */
-  }
-  
-  header h1 {
+    border-radius: 20px;
+}
+
+header h1 {
     margin: 0;
     font-size: 2.5rem;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     gap: 20px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-  }
-  
-  /* Hero Section */
-  #hero {
-    background: url('photos/hero\ background.jpg') no-repeat center center/cover;
+}
+
+/* Hero Section */
+#hero {
+    background: url('photos/hero background.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 100px 0;
-    border-radius: 20px; /* Adjust the value to control the roundness */
-    overflow: hidden; /* Ensures the image respects the rounded corners */
-  }
-  
-  #hero h2 {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#hero h2 {
     font-size: 3rem;
     margin-bottom: 10px;
-    color: #FFFFFF;;
-  }
-  
-  #hero p {
+    color: #FFFFFF;
+}
+
+#hero p {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #FFFFFF;;
-  }
-  
-  .btn {
+    color: #FFFFFF;
+}
+
+.btn {
     background-color: #e67e22;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 20px;
     font-weight: 600;
-  }
-  
-  /* About Section */
-  #about {
+}
+
+/* About Section */
+#about {
     background-color: #fff;
     padding: 50px 0;
-    text-align:left ;
-  }
-  
-  #about h2 {
+    text-align: left;
+}
+
+#about h2 {
     color: #2c3e50;
     margin-bottom: 20px;
-  }
-  
-  #about p {
+}
+
+#about p {
     font-size: 1.1rem;
     line-height: 1.6;
-    color:#000000
-  }
-  
-  /* Services Section */
-  #services {
+    color: #000000;
+}
+
+/* Services Section */
+#services {
     background-color: #f4f4f4;
     padding: 50px 0;
     text-align: center;
-  }
-  
-  #services h2 {
+}
+
+#services h2 {
     color: #2c3e50;
     margin-bottom: 40px;
-  }
-  
-  .services-grid {
+}
+
+.services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-  }
-  
-  .service {
+}
+
+.service {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .service h3 {
+}
+
+.service h3 {
     color: #e67e22;
     margin-bottom: 10px;
-  }
-  
-  /* Gallery Section */
-  #gallery {
+}
+
+/* Gallery Section */
+#gallery {
     padding: 50px 0;
     text-align: center;
-  }
-  
-  #gallery h2 {
+}
+
+#gallery h2 {
     color: #2c3e50;
     margin-bottom: 40px;
-  }
-  
-  .gallery-grid {
+}
+
+.gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-  }
-  
-  .gallery-grid img {
+}
+
+.gallery-grid img {
     width: 100%;
     border-radius: 10px;
-  }
-  
-  /* Contact Section */
-  #contact {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.gallery-grid img.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Contact Section */
+#contact {
     background-color: #2c3e50;
     color: #fff;
     padding: 50px 0;
     text-align: center;
-  }
-  
-  #contact h2 {
+}
+
+#contact h2 {
     margin-bottom: 20px;
-  }
-  
-  #contact form {
+}
+
+#contact form {
     display: flex;
     flex-direction: column;
     gap: 15px;
     max-width: 600px;
     margin: 0 auto;
-  }
-  
-  #contact input, #contact textarea {
+}
+
+#contact input, #contact textarea {
     padding: 10px;
     border: none;
     border-radius: 5px;
-  }
-  
-  #contact button {
+}
+
+#contact button {
     background-color: #e67e22;
     color: #fff;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-  }
-  
-  /* Footer */
-  footer {
+}
+
+/* Footer */
+footer {
     background-color: #2c3e50;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-  }
+}
