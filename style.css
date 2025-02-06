@@ -20,9 +20,7 @@ body {
   /* Header */
   header {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 80px; /* Adjust the height of the header */
+    justify-content: center;
     background-color: #2c3e50;
     color: #fff;
     padding: 10px 20px;
@@ -38,17 +36,16 @@ body {
 @media (max-width: 768px) {
     /* Mobile styles */
     .logo img {
-        width: 120px; /* Smaller width for mobile */
+        width: 150px; /* Smaller width for mobile */
     }
-    
 }
 
 @media (min-width: 769px) {
     /* Desktop styles */
     .logo img {
-        width: 150px; /* Larger width for desktop */
+        width: 200px; /* Larger width for desktop */
     }
-    
+}
   }
   
   header h1 {
