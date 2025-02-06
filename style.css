@@ -16,8 +16,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     
-    justify-content: space-between; /* Space out logo and navigation */
-    align-items: center; /* Vertically center items */
+  
   }
   
   /* Header */
