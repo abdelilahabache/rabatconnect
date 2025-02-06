@@ -23,6 +23,11 @@ body {
     color: #fff;
     padding: 20px 0;
     border-radius: 20px; /* Adjust the value to control the roundness */
+    /* Only logo styles */
+.logo img {
+    height: 50px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
   }
   
   header h1 {
