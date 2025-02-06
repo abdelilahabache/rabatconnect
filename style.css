@@ -40,9 +40,7 @@ body {
     .logo img {
         width: 120px; /* Smaller width for mobile */
     }
-    header {
-        height: 60px; /* Smaller height for mobile */
-    }
+    
 }
 
 @media (min-width: 769px) {
@@ -50,9 +48,7 @@ body {
     .logo img {
         width: 150px; /* Larger width for desktop */
     }
-    header {
-        height: 80px; /* Height for desktop */
-}
+    
   }
   
   header h1 {
