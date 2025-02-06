@@ -27,8 +27,23 @@ body {
     /* Only logo styles */
     border-bottom: 1px solid #ddd;
 .logo img {
-    height: 50px; /* Adjust height as needed */
-    width: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure the logo doesn't overflow its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Mobile styles */
+    .logo img {
+        width: 150px; /* Smaller width for mobile */
+    }
+}
+
+@media (min-width: 769px) {
+    /* Desktop styles */
+    .logo img {
+        width: 200px; /* Larger width for desktop */
+    }
 }
   }
   
