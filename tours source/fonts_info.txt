@@ -1,0 +1,4 @@
+List of Fonts used in template 
+
+Oswald		http://www.google.com/webfonts/specimen/Oswald
+Open Sans	http://www.google.com/webfonts/specimen/Open+Sans

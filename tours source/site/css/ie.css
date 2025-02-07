@@ -1,0 +1,11 @@
+/* -----------------for pie------------------- */
+.btndown>span, .btnup>span{
+display: none;
+}
+.btndown:hover>span, .btnup:hover>span{
+display: block;
+}
+#content>ul>li{
+background: url(../images/content_bg_2.png) center no-repeat;
+}
+.readMore, figure, #form1 input, #form1 textarea, .list3>li {position: relative; behavior: url(js/PIE.htc); }
