@@ -72,12 +72,14 @@ nav ul li a:hover {
     color: #fff;
     padding: 150px 0;
     text-align: center;
+    color: #000000;
 }
 
 .hero h2 {
     font-size: 2.5em;
     margin-bottom: 10px;
     animation: fadeIn 2s ease-in-out;
+    color: #000000;
 }
 
 .hero p {
