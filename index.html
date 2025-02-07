@@ -1,101 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="logo/logo with blue bg.png">
-  <title>Rabat Connect</title>
-  <link rel="logo" href="logo/logo with blue bg.png">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabat Connect</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-        <div class="logo">
-            <a href="index.html">
-            <img src="logo/logo bg.png" alt="Rabat Connect">
-        </a>
-          </div>
-      
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  
-
-  <section id="hero">
-    <div class="container">
-      <h2>Welcome to Rabat Connect</h2>
-      <p>Your gateway to the heart of Morocco's capital.</p>
-      <a href="#about" class="btn">Explore More</a>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="container">
-      <h2>Welcome to Rabat Connect: Your Cultural and Travel Companion in Rabat</h2>
-      <p>At Rabat Connect, we believe in creating meaningful connections between travelers and the heart of Rabat. Together with our trusted partners, we offer a curated experience that combines expert tour guides, immersive cultural workshops, and comfortable accommodations—all designed to make your stay in Rabat unforgettable.</p>
-      <h3>Why Choose Rabat Connect?</h3>
-      <p> Rabat Connect is more than just a service, it’s your gateway to authentic experiences in Morocco’s capital. We’re passionate about sharing Rabat’s rich history, vibrant culture, and warm hospitality with the world.</p>
-    </div>
-  </section>
-
-  <section id="services">
-    <div class="container">
-      <h2>Our Services</h2>
-      <div class="services-grid">
-        <div class="service">
-          <h3>Tour Guides</h3>
-          <p>Explore Rabat with our expert guides who will take you through the city's hidden gems.</p>
+    <header>
+        <div class="container">
+            <h1>Rabat Connect</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
         </div>
-        <div class="service">
-          <h3>eSIM Connectivity</h3>
-          <p>Rabat Connect offers eSIM connectivity in Rabat, partnering with global leaders to provide instant, hassle-free mobile data without physical SIM cards. Stay connected effortlessly with our reliable, worldwide network—visit Rabat Connect today!.</p>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Rabat</h2>
+            <p>Experience the charm of Rabat with our comfortable homestays and seamless eSIM connectivity.</p>
+            <a href="#services" class="btn">Explore Our Services</a>
         </div>
-        <div class="service">
-          <h3>Accommodation</h3>
-          <p>Stay in handpicked riads and hotels that reflect the authentic Moroccan vibe.</p>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-item fade-in">
+                <h3>Homestays</h3>
+                <p>Enjoy a cozy and authentic stay in Rabat with our handpicked homestays.</p>
+            </div>
+            <div class="service-item fade-in">
+                <h3>eSIM Connectivity</h3>
+                <p>Stay connected with our easy-to-use eSIM solutions for travelers.</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="gallery">
-    <div class="container">
-      <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <img src="photos/rabat1.jpg" alt="Rabat Image 1">
-        <img src="photos/rabat2.jpg" alt="Rabat Image 2">
-        <img src="photos/rabat3.jpg" alt="Rabat Image 3">
-      </div>
-    </div>
-  </section>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are dedicated to providing the best homestay experiences and connectivity solutions in Rabat, Morocco. Our mission is to make your stay comfortable and connected.</p>
+        </div>
+    </section>
 
-  <section id="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Rabat Connect. All rights reserved.</p>
-    </div>
-  </footer>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rabat Connect. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
