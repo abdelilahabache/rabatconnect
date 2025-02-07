@@ -196,7 +196,7 @@ position: relative;
 
 padding: 0 10px;
 background: url(../images/menu_divider.png) 0px 2px no-repeat;
-float: left;
+float:left;
 }
 #menu>li:first-child {
 background: none;
