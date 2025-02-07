@@ -1,19 +1,3 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
-    scroll-behavior: smooth;
-}
-
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 /* Header */
 header {
     background: #333;
@@ -24,16 +8,27 @@ header {
     z-index: 1000;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust the height as needed */
+    width: auto; /* Maintain aspect ratio */
+}
+
 header h1 {
     margin: 0;
     font-size: 1.8em;
+    margin-left: 10px; /* Space between logo and title */
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
 }
 
@@ -66,148 +61,20 @@ nav ul li a:hover {
     transition: all 0.3s ease;
 }
 
-/* Hero Section */
-.hero {
-    background: url('rabat.jpg') no-repeat center center/cover;
-    color: #fff;
-    padding: 150px 0;
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    animation: fadeIn 2s ease-in-out;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    animation: fadeIn 2.5s ease-in-out;
-}
-
-.hero .btn {
-    background: #ff6f61;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-    animation: fadeIn 3s ease-in-out;
-}
-
-.hero .btn:hover {
-    background: #e65a50;
-}
-
-/* Services Section */
-.services {
-    padding: 80px 0;
-    text-align: center;
-}
-
-.services h2 {
-    margin-bottom: 40px;
-    animation: fadeIn 1s ease-in-out;
-}
-
-.service-item {
-    margin-bottom: 30px;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-}
-
-.service-item.fade-in {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.service-item h3 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-/* About Section */
-.about {
-    background: #f4f4f4;
-    padding: 80px 0;
-    text-align: center;
-}
-
-.about h2 {
-    margin-bottom: 20px;
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* Contact Section */
-.contact {
-    padding: 80px 0;
-    text-align: center;
-}
-
-.contact h2 {
-    margin-bottom: 20px;
-    animation: fadeIn 1s ease-in-out;
-}
-
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
-}
-
-.contact label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.contact input, .contact textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact button {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.contact button:hover {
-    background: #555;
-}
-
-/* Footer */
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .logo img {
+        height: 40px; /* Smaller logo for mobile */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Smaller title for mobile */
+    }
+
     .menu-toggle {
         display: flex;
     }
