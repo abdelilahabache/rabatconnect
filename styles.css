@@ -136,3 +136,7 @@ body {
     text-align: center;
     padding: 20px 0;
   }
+  /*Paragraph styles*/
+  p {
+    margin-bottom: 15px;
+  }
