@@ -135,6 +135,22 @@ body {
     color: #fff;
     text-align: center;
     padding: 20px 0;
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      padding: 20px 0;
+    }
+    
+    .social-icons a {
+      color: #555;
+      font-size: 24px;
+      transition: color 0.3s;
+    }
+    
+    .social-icons a:hover {
+      color: #000; /* or your brand color */
+    }
   }
   /*Paragraph styles*/
   p {
