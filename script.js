@@ -40,17 +40,4 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
   });
 
-  // Header scroll effect
-window.addEventListener('scroll', () => {
-  const header = document.querySelector('.header');
-  if (window.scrollY > 50) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-});
-
-// Mobile menu toggle
-document.querySelector('.menu-toggle').addEventListener('click', () => {
-  document.querySelector('.nav').classList.toggle('active');
-});
+  
