@@ -228,3 +228,126 @@ h3 {
 }
 
 
+/* Tour Section Styles */
+.tour-section {
+  padding: 3rem 0;
+  background-color: #f9f9f9;
+}
+
+.tour-tagline {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.tour-badges {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.free-cancellation {
+  background-color: #e3f7e8;
+  color: #2e7d32;
+}
+
+.reserve-now {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.duration {
+  background-color: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.tour-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .tour-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.feature-list, .highlight-list, .inclusion-list, .exclusion-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 1rem 0;
+}
+
+.feature-list li, .highlight-list li, .inclusion-list li, .exclusion-list li {
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.feature-list li:before, .highlight-list li:before {
+  content: "•";
+  color: #4caf50;
+  position: absolute;
+  left: 0;
+}
+
+.review-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.review-rating {
+  color: #ffc107;
+}
+
+.tour-cta {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  margin-top: 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.check-availability-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.check-availability-btn:hover {
+  background-color: #3d8b40;
+}
+
+.map-link {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.map-link:hover {
+  text-decoration: underline;
+}
